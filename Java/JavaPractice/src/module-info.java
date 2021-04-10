@@ -1,0 +1,3 @@
+module javaLeetCode {
+	exports javapractice;
+}
