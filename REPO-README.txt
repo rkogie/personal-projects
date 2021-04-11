@@ -1,5 +1,5 @@
 ---------------------------------
-PROJECT FOLDER CONTENTS
+PROJECT REPO CONTENTS
 ---------------------------------
 
 Mortgage Approval Predictor | Python, Scikit-Learn, Matplotlib, Pandas, NumPy			June 2020 – Sept 2020
@@ -20,3 +20,6 @@ Meal List Menu | JavaScript, React, React-Native, Redux, Node.js				Summer 2020
 •	Select and change from a list of meal options stored in different categories 
 •	Utilizes hard-coded database model (MVC), add favourites, store updates, filter by preferences (dietary filters) and edit descriptions
 
+
+Java, C++, Python, JavaScript
+•	Learning workspace for common abstract data structures, most frequent searching/sorting algorithms and time/space complexities (Big O)
