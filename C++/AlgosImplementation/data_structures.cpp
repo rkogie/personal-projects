@@ -15,7 +15,7 @@ void fizz_buzz(int first, int last) {
 	}
 }
 
-int main() {
+/*int main() {
 	try {
 		fizz_buzz(20, 65);
 	}
@@ -23,4 +23,4 @@ int main() {
 		std::cout << "An error occured";
 	}
 	return 0;
-}
+}*/

@@ -35,11 +35,11 @@ bool is_unique(string s)
 	return true;
 }
 
-int main()
+/*int main()
 {
 	cout << boolalpha << is_unique("abcdefgh") << endl;
 	cout << boolalpha << is_unique("abcdefggh");
-}
+}*/
 //void save_score(int guess_count)
 //{
 //	ifstream input("best_score.txt");

@@ -40,7 +40,7 @@ int jumpSearch(int arr[], int target, int arrayLength)
 }
 
 // Driver program to test function
-int main()
+/*int main()
 {
     int arr[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21,
                 34, 55, 89, 144, 233, 377, 610 };
@@ -53,4 +53,4 @@ int main()
     // Print the index where 'target' is located
     cout << "\nNumber " << target << " is at index " << index;
     return 0;
-}
+}*/
