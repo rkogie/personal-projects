@@ -21,5 +21,5 @@ Meal List Menu | JavaScript, React, React-Native, Redux, Node.js				Summer 2020
 •	Utilizes hard-coded database model (MVC), add favourites, store updates, filter by preferences (dietary filters) and edit descriptions
 
 
-Java, C++, Python, JavaScript
+Java, C++, Python, JavaScript, System Design
 •	Learning workspace for common abstract data structures, most frequent searching/sorting algorithms and time/space complexities (Big O)
