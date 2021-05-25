@@ -23,3 +23,4 @@ Meal List Menu | JavaScript, React, React-Native, Redux, Node.js				Summer 2020
 
 Java, C++, Python, JavaScript, System Design
 •	Learning workspace for common abstract data structures, most frequent searching/sorting algorithms and time/space complexities (Big O)
+•	System Design Concepts
