@@ -1,0 +1,88 @@
+﻿@model Comp235MVCDemo.Models.Movie
+@Styles.Render("~/Content/Site.css")
+@{
+    ViewBag.Title = "Movie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movie</h2>
+
+@using (Html.BeginForm("Movie", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.Id)
+
+    if (!Model.IsEditable)
+    {
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-0pky">Label</th>
+                    <th class="tg-0pky">Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-0pky">ID</td>
+                    <td class="tg-0pky">@Html.DisplayFor(m => m.Id)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">Title</td>
+                    <td class="tg-0pky">@Html.DisplayFor(m => m.Title)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">Director</td>
+                    <td class="tg-0pky">@Html.DisplayFor(m => m.Director)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">Description</td>
+                    <td class="tg-0pky">@Html.DisplayFor(m => m.Description)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">@Html.ActionLink("Edit", "Edit", new { Id = Model.Id })</td>
+                    <td class="tg-0pky">@Html.ActionLink("Delete", "Delete", new { Id = Model.Id })</td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-0pky">Label</th>
+                    <th class="tg-0pky">Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-0pky">ID</td>
+                    <td class="tg-0pky">@Html.DisplayFor(m => m.Id) @Html.HiddenFor(m => m.Id) </td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">Title</td>
+                    <td class="tg-0pky">@Html.TextBoxFor(m => m.Title)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">Director</td>
+                    <td class="tg-0pky">@Html.TextBoxFor(m => m.Director)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky">Description</td>
+                    <td class="tg-0pky">@Html.TextBoxFor(m => m.Description)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0pky"><input type="submit" value="Save" name="Save" class="btn btn-link" /></td>
+                    <td class="tg-0pky"><input type="submit" value="Cancel" name="Cancel" class="btn btn-link" /></td>
+                    <td style="color:green">@ViewBag.Message</td>
+                </tr>
+            </tbody>
+        </table>
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+C:\Users\rkogi\Documents\1_Dev\0.WORKSPACE\personal-projects\C++\WorkSpace_CPP\Debug\WorkSpace_CPP.exe
+C:\Users\rkogi\Documents\1_Dev\0.WORKSPACE\personal-projects\C++\WorkSpace_CPP\Debug\WorkSpace_CPP.pdb

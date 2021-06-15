@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dea60d97-97a5-4cf8-bb8c-cb0656815ef0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binary_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/binary_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_code/clean_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/clean_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heap_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/heap_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/linear_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/data structures/linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/linked_list_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longest_palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/longest_palindrome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/merge_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quick_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/quick_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive_binary_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_sort_algos/recursive_binary_search.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tGcS7yXmdyzWuLaMpVoRTD8Bld" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/clean_code/clean_code.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Python 3.8" type="PythonConfigurationType" factoryName="Python">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clean_code" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clean_code/clean_code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dea60d97-97a5-4cf8-bb8c-cb0656815ef0" name="Default Changelist" comment="" />
+      <created>1622398864807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622398864807</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="410" y="166" width="1099" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622516602725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="166" width="1099" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622516602725" />
+    <state x="623" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1622516242599">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622516242599" />
+    <state x="686" y="274" key="FileChooserDialogImpl" timestamp="1622516401391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622516401391" />
+    <state width="1893" height="267" key="GridCell.Tab.0.bottom" timestamp="1622519341522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622519341522" />
+    <state width="1893" height="267" key="GridCell.Tab.0.center" timestamp="1622519341522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="267" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622519341522" />
+    <state width="1893" height="267" key="GridCell.Tab.0.left" timestamp="1622519341521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="267" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622519341521" />
+    <state width="1893" height="267" key="GridCell.Tab.0.right" timestamp="1622519341522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="267" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622519341522" />
+    <state x="351" y="78" key="SettingsEditor" timestamp="1622516326470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="351" y="78" key="SettingsEditor/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1622516326470" />
+  </component>
+</project>
