@@ -47,7 +47,7 @@ def loop_with_enum_and_zip():
         print(index, name)
 
     """
-    4.5. Use zip func to loop over two lists concurrently"""
+    4.5. Use zip func to loop over two or more lists concurrently"""
     names = ['Horatio', 'Datargnan', 'Boromir', 'Sauraman']
     characters = ['Rasputin', 'Dimitri', 'Anastasia', 'Eowyn']
     worlds = ['Omicron Persei 8', 'Galgamesh', 'Newfoundland', 'Skrull Planet']
@@ -62,21 +62,24 @@ def unpack_values():
     print(a)
     print(b)
 
+
 """
 5. Getting and set instances (objects) of class"""
 def get_set_attributes():
     class Person:
         pass # keyword for placeholder for future code
     person = Person()
-    person_info = {'first': 'Anna', 'last': 'Kogie'} # declare list
+    f_name = 'Jerry'
+    l_name = 'Springer'
+    person_info = {'first': f_name, 'last': l_name}  # declare list
+
     for key, value in person_info.items():
         setattr(person, key, value) # loop through and assign keys to each val using setter
-    print(f'Hello, my daughter {person.first} {person.last} will be born in July 2021')
+    print(f'Hello, my neighbour\'s name is {person.first} {person.last} and I am a popular talk-show host\n')
 
     for key in person_info.keys():
         print(getattr(person, key))
 
-"""
-5. Storing variables """
-from getpass import getpass
+
+
 
