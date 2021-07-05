@@ -16,6 +16,7 @@ public class TwoSum {
     //Implementation algorithm for O(n) time and O(n) space - utilizing hashtable
     //Brute force approach using nested for loops (i, j) would result in O(n^2) which would not scale
     //Store values in a HashTable and just perform look up if the complement exists
+    //Algorithm profiling provides O(n) time and HashTable provides O(1) time/space complexity
     public static int[] twoSum(int[] numArray, int target) throws IllegalArgumentException{
         Map<Integer, Integer> numMap = new HashMap<>();
 
@@ -30,7 +31,7 @@ public class TwoSum {
                 //Returns indices pair that == target
                 return new int[] {numMap.get(complement), i};
             }
-            numMap.put(numArray[i],i);
+            numMap.put(numArray[i],i); //if complement not found, store key,value pair in hashtable
         }
         //Capture case for no found pairs that sum to target
         throw new IllegalArgumentException("No match found");
@@ -42,8 +43,8 @@ public class TwoSum {
         //Edge case example: target = 18  should return indices for these two value sums : 6+12 and 9+9
         int[] numArray = new int[]{3,6,7,12,7,25,8,9,11,3,9};
         int[] emptyArray = {};
-        System.out.print(Arrays.toString(twoSum(numArray, 200)));
-        System.out.print(Arrays.toString(twoSum(emptyArray, 30)));
+        System.out.print(Arrays.toString(twoSum(numArray, 14))); //returns index pos - TEST CASE PASS
+        System.out.print(Arrays.toString(twoSum(numArray, 200))); //returns 'No match found' - TEST CASE PASS
+        System.out.print(Arrays.toString(twoSum(emptyArray, 30))); //returns 'Array cannot be empty' - TEST CASE PASS
     }
-
 }
