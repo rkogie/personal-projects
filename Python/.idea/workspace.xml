@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea60d97-97a5-4cf8-bb8c-cb0656815ef0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DataStructures/out/production/JavaDS/FourteenDesignPatters/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructures/out/production/JavaDS/FourteenDesignPatters/TwoSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructures/src/FourteenDesignPatters/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructures/src/FourteenDesignPatters/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_code/clean_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/clean_code.py" afterDir="false" />
-    </list>
+    <list default="true" id="dea60d97-97a5-4cf8-bb8c-cb0656815ef0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
