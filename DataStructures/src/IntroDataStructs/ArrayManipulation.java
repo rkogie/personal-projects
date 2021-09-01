@@ -4,32 +4,63 @@ import java.util.*;
 
 public class ArrayManipulation {
 
+    private static Scanner KEYBOARD;
+
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
-        //Test Case for Func 1
-        /*int[] array = {1, 5, 8, 9, 11, 13, 15, 19, 21};
-        int reversed[] = reverse(array);
-        System.out.println(Arrays.toString(reversed));*/
 
+        //Test Case
+        runNumToRoman();
 
-        //Test Case for Func 2
-        /*try{
-            System.out.printf("Enter your case: ");
-            int test = keyboard.nextInt();
-            System.out.printf("Input: %d \n Output: %s",test,intToRoman(test));
-        } catch(Exception e){
-            System.out.println(e.getLocalizedMessage());
-        }*/
-
-        //Test Case for Func 3
-        /*try{
-            System.out.printf("Enter your case: ");
-            String test = keyboard.next();
-            System.out.printf("Input: %s \n Output: %d",test,romanToInt(test));
-        } catch(Exception e){
-            System.out.println(e.getLocalizedMessage());
-        }*/
+        //Test Case -- uncomment and run
+        //runRomanToNum();
     }
+
+    /*
+    @DOC-COMMENTS
+    Due to duplicate code in helper functions, consider optimizing to pass in keyboard params to
+    create a menu option of which algorithm user wants to attempt, Example below:
+
+       Welcome...Choose your algo:
+            1. intToRoman
+            2. romanToInt
+
+    Whichever selected, create a string composition to pass the %d and %s values dependent on the selection made
+     */
+
+    /**
+     * Runs the function to convert number to Roman numeral equivalent
+     * @author RK
+     * @return void
+     */
+    public static void runNumToRoman() {
+        KEYBOARD = new Scanner(System.in);
+
+        try {
+            System.out.printf("Enter your case: ");
+            int test = KEYBOARD.nextInt();
+            System.out.printf("Input: %d \nOutput: %s", test, intToRoman(test));
+        } catch (Exception e) {
+            System.out.println(e.getLocalizedMessage());
+        }
+    }
+
+    /**
+     * Runs the function to convert Roman numeral to its numeral equivalent
+     * @author RK
+     * @return void
+     */
+    public static void runRomanToNum() {
+        KEYBOARD = new Scanner(System.in);
+
+        try {
+            System.out.printf("Enter your case: ");
+            String test = KEYBOARD.next();
+            System.out.printf("Input: %s \nOutput: %d", test, romanToInt(test));
+        } catch (Exception e) {
+            System.out.println(e.getLocalizedMessage());
+        }
+    }
+
 
     // Func 1 -- Algorithm to reverse array in place -- takes O(n) time and O(n) space
     //takes O(n) space because two temp variables are created to swap index pos
@@ -43,8 +74,14 @@ public class ArrayManipulation {
         return arr;
     }
 
-    // Func 2 -- Given an integer, find it's Roman Numeral Representation
-    // Linear runtime O(n) given the number size, however due to the range set, its capped at <4000
+    /**
+     * Takes a number and returns its roman numeral representation.
+     * Linear runtime O(n) given the number size, however due to the range set, its capped at <4000
+     * @author RK
+     * @param number Input parameter.
+     * @return Roman Numeral as string.
+     * @throws IllegalArgumentException
+     */
     public static String intToRoman(int number) throws IllegalArgumentException{
         //Map of Set Roman numbers within order 1000 down to 1 and corresponding value
         //for look-up functionality (key,val) - refactor using HashTable
@@ -81,8 +118,15 @@ public class ArrayManipulation {
         return numeral.toString();
     }
 
-    // Func 3 -- Given a Roman numeral, find it's Numeral Representation
-    // Linear runtime O(n) given the number size, however due to the range set
+
+    /**
+     * Takes a roman numeral and returns its number representation.
+     * Notes: Linear runtime O(n) given the number size, however due to the map set, max value caps at 3999
+     * @author RK
+     * @param numeral Input parameter.
+     * @return Number as integer.
+     * @throws IllegalArgumentException
+     */
     public static int romanToInt(String numeral) throws IllegalArgumentException{
         HashMap<Character, Integer> romanDictionary = new HashMap<>();
         //Store values in a dictionary set as there is a defined list of numerals
