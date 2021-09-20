@@ -13,6 +13,6 @@ namespace API.Controllers
     [Route("api/[controller]")] //api/activites/{whateverendpoint}
     public class BaseApiController : ControllerBase
     {
-
+        
     }
 }
