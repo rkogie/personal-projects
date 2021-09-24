@@ -13,7 +13,7 @@ function App() {
       console.log(res);
       setActvities(res.data);
     })
-  }, [])
+  }, []);
 
   return (
     <div>
