@@ -1,17 +1,41 @@
-import React from 'react';
+import React, {ChangeEvent, useState} from 'react';
+import { act } from 'react-dom/test-utils';
 import { Form, Segment, Button } from 'semantic-ui-react';
+import { Activity } from '../../../app/models/activity-model';
 
-/*interface Props{
-    -- Todo
-}*/
+interface Props {
+    activity: Activity | undefined;
+    closeForm: () => void;
+}
 
 
-export default function ActivityForm() {
+export default function ActivityForm({ activity: selectedActivity, closeForm }: Props) {
+    
+    const initState = selectedActivity ?? {
+        id: '',
+        title: '',
+        category: '',
+        description: '',
+        date: '',
+        city: '',
+        venue: '',
+    }
+    const [activity, setActivity] = useState(initState);
+
+    function handleSubmit() {
+        console.log(activity);
+    }
+
+    function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
+        const { name, value } = event.target;
+        setActivity({...activity, [name]: value})
+    }
+
     return (
         <Segment clearing>
 
-            <Form>
-                <Form.Input placeholder='Title'/>
+            <Form onSubmit={handleSubmit} autoComplete='off'>
+                <Form.Input placeholder='Title' value={activity.title} name='title' onChange={handleInputChange}/>
                 <Form.TextArea placeholder='Description'/>
                 <Form.Input placeholder='Category'/>
                 <Form.Input placeholder='Date'/>
@@ -25,7 +49,8 @@ export default function ActivityForm() {
                 <Button
                     floated='right'
                     type='button'
-                    content='Cancel'/>
+                    content='Cancel'
+                    onClick={closeForm} />
             </Form>
         </Segment>
     )
