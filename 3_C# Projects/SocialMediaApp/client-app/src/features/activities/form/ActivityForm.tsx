@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { Form, Segment, Button } from 'semantic-ui-react';
 import { Activity } from '../../../app/models/activity-model';
 
@@ -6,12 +6,13 @@ interface Props {
     activity: Activity | undefined;
     closeForm: () => void;
     createOrEdit: (activity: Activity) => void;
+    submitting: boolean;
 }
 
 
 export default function ActivityForm(
-    { activity: selectedActivity, closeForm, createOrEdit}: Props) {
-    
+    { activity: selectedActivity, closeForm, createOrEdit, submitting }: Props) {
+
     const initState = selectedActivity ?? {
         id: '',
         title: '',
@@ -30,7 +31,7 @@ export default function ActivityForm(
     function handleInputChange(
         event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
         const { name, value } = event.target;
-        setActivity({...activity, [name]: value})
+        setActivity({ ...activity, [name]: value })
     }
 
     return (
@@ -53,6 +54,7 @@ export default function ActivityForm(
                     onChange={handleInputChange} />
                 <Form.Input
                     placeholder='Date'
+                    type='date'
                     value={activity.date}
                     name='date'
                     onChange={handleInputChange} />
@@ -65,17 +67,18 @@ export default function ActivityForm(
                     placeholder='Venue'
                     value={activity.venue}
                     name='venue'
-                    onChange={handleInputChange}/>
+                    onChange={handleInputChange} />
                 <Button
                     positive
                     floated='right'
                     type='submit'
-                    content='Submit'/>
+                    content='Submit'
+                    loading={submitting}/>
                 <Button
                     floated='right'
                     type='button'
                     content='Cancel'
-                    onClick={closeForm}/>
+                    onClick={closeForm} />
             </Form>
         </Segment>
     )
