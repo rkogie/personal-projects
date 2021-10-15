@@ -59,6 +59,7 @@ tmp/
 *.swp
 *~.nib
 local.properties
+application.properties
 .loadpath
 .factorypath
 
