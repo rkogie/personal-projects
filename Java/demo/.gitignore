@@ -60,6 +60,7 @@ tmp/
 *~.nib
 local.properties
 application.properties
+*.properties
 .loadpath
 .factorypath
 
