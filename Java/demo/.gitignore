@@ -9,6 +9,7 @@ HELP.md
 *.ear
 *.nar
 hs_err_pid*
+*.properties
 
 ##############################
 ## Maven
@@ -59,7 +60,6 @@ tmp/
 *.swp
 *~.nib
 local.properties
-application.properties
 .loadpath
 .factorypath
 
