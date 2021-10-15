@@ -1,15 +1,15 @@
 import React, { SyntheticEvent, useState } from 'react';
 import { Button, Item, Label, Segment } from 'semantic-ui-react';
 import { Activity } from '../../../app/models/activity-model';
+import { useStore } from '../../../app/stores/Store';
 
 interface Props {
     activities: Activity[];
-    selectActivity: (id: string) => void;
     deleteActivity: (id: string) => void;
     submitting: boolean;
 }
 
-export default function ActivityList({ activities, selectActivity, deleteActivity, submitting }: Props) {
+export default function ActivityList({ activities, deleteActivity, submitting }: Props) {
 
     //Behaviour that affects only the button identified with the list obj
     const [target, setTarget] = useState('');
@@ -18,6 +18,8 @@ export default function ActivityList({ activities, selectActivity, deleteActivit
         setTarget(event.currentTarget.name);
         deleteActivity(id);
     }
+
+    const { activityStore } = useStore();
 
     return (
         <Segment>
@@ -36,7 +38,7 @@ export default function ActivityList({ activities, selectActivity, deleteActivit
                                     floated='right'
                                     content='View'
                                     color='blue'
-                                    onClick={() => selectActivity(activity.id)} />
+                                    onClick={() => activityStore.selectActivity(activity.id)} />
                                 <Button
                                     name={activity.id}
                                     floated='right'
