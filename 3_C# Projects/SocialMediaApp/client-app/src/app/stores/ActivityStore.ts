@@ -23,7 +23,6 @@ export default class ActivityStore {
     //Arrow funcs auto bind to the class
     //Not required to setTitle: action.bound
     loadActivites = async () => {
-        
         try {
             const activitites = await agent.Activities.list();
             
@@ -75,7 +74,7 @@ export default class ActivityStore {
         activity.id = uuid();
         try {
             await agent.Activities.create(activity);
-            this.createOrUpdateHandler(activity);
+            this.actionHandler(activity);
         } catch (error) {
             console.log(error);
             runInAction(() => {
@@ -84,12 +83,12 @@ export default class ActivityStore {
         }
     }
 
-    createOrUpdateHandler = (activity: Activity) =>{
+    actionHandler = (activity: Activity) =>{
         runInAction(() => {
             this.activityRegistry.set(activity.id, activity);
             this.selectedActivity = activity;
             this.setEditMode(false);
-            this.setLoading(true);
+            this.setLoading(false);
         });
     }
 
@@ -97,7 +96,7 @@ export default class ActivityStore {
         this.setLoading(true);
         try {
             await agent.Activities.update(activity);
-            this.createOrUpdateHandler(activity);
+            this.actionHandler(activity);
         } catch (error) {
             console.log(error);
             runInAction(() => {
