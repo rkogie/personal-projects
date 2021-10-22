@@ -1,48 +1,31 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment} from 'react';
 import { Container } from 'semantic-ui-react';
-import { Activity } from '../models/activity-model';
-import LoadingComponent from '../layout/LoadingComponent'
 import NavBar from './NavBar';
-import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
-import agent from '../api/agent';
-import { useStore } from '../stores/Store';
 import { observer } from 'mobx-react-lite';
+import { Route, useLocation } from 'react-router-dom';
+import HomePage from '../../features/activities/home/HomePage';
+import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
+import ActivityForm from '../../features/activities/form/ActivityForm';
+import ActivityDetails from '../../features/activities/details/ActivityDetails';
 
 function App() {
-
-  //Unpack the Store props
-  const { activityStore } = useStore();
-
-
-  const [activities, setActivities] = useState<Activity[]>([]);
-  const [submitting, setSubmitting] = useState(false);
-
-  useEffect(() => {
-    activityStore.loadActivites();
-  }, [activityStore]);
-
-
-  function handleDeleteActivity(id: string) {
-    setSubmitting(true);
-    agent.Activities.delete(id).then(() => {
-      setActivities([...activities.filter(x => x.id !== id)]);
-      setSubmitting(false);
-    });
-
-  }
-
-  //Guard for checking if app fetching data from server 
-  if (activityStore.loadingInitial) return <LoadingComponent content='Fetching...' />
+  const location = useLocation();
 
   return (
     <Fragment>
-      <NavBar/>
-      <Container style={{ marginTop: '7em' }}>
-        <ActivityDashboard
-          activities={activityStore.activities}
-          deleteActivity={handleDeleteActivity}
-          submitting={submitting} />
-      </Container>
+      <Route exact path='/' component={HomePage} />
+      <Route
+        path={'/(.+)'}
+        render={() => (
+          <Fragment>
+            <NavBar />
+            <Container style={{ marginTop: '7em' }}>
+              <Route exact path='/activities' component={ActivityDashboard} />
+              <Route path='/activities/:id' component={ActivityDetails} />
+              <Route key={location.key} path={['/createActivity', '/manage/:id']} component={ActivityForm} />
+            </Container>
+          </Fragment>
+        )} />
     </Fragment>
   );
 }
