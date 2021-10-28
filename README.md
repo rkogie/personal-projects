@@ -4,7 +4,7 @@ REPO CONTENTS
 
 RESTful Web Service | Java (Spring, SpringBoot), Docker, Kubernetes | 2021
 ==========================================================================
-**IN PROGRES**
+**IN PROGRESS**
 
 Trip Blogger | .NET 5, C#, Entity Framework, SQLite, TypeScript, React (Redux, Axios, Mobx) | 2021
 ==================================================================================================
