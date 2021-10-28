@@ -1,7 +1,0 @@
-﻿  insertion_sort.cpp
-  jump_search.cpp
-C:\Users\rkogi\Documents\1_Dev\0.WORKSPACE\personal-projects\C++\AlgosImplementation\jump_search.cpp(11,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\rkogi\Documents\1_Dev\0.WORKSPACE\personal-projects\C++\AlgosImplementation\jump_search.cpp(19,34): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-  WorkSpace_CPP.cpp
-  Generating Code...
-  WorkSpace_CPP.vcxproj -> C:\Users\rkogi\Documents\1_Dev\0.WORKSPACE\personal-projects\C++\WorkSpace_CPP\Debug\WorkSpace_CPP.exe

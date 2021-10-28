@@ -1,2 +1,0 @@
-LinkedList.GenericList
-LinkedList.GNode
