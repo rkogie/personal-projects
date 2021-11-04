@@ -12,6 +12,7 @@ export default observer(function ActivityForm() {
     const { activityStore } = useStore();
     const { createActivity, updateActivity,
         loading, loadingInitial, loadActivity } = activityStore;
+    
     const { id } = useParams<{id: string}>();
     const [activity, setActivity] = useState({
         id: '',
@@ -89,7 +90,7 @@ export default observer(function ActivityForm() {
                     loading={loading} />
                 <Button
                     as={Link}
-                    to={'/activities'}
+                    to='/activities'
                     floated='right'
                     type='button'
                     content='Cancel'

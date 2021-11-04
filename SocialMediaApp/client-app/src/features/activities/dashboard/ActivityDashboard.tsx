@@ -11,9 +11,14 @@ export default observer(function ActivityDashboard() {
 
     //Unpack the Store props
     const { activityStore } = useStore();
-        useEffect(() => {
-            activityStore.loadActivites();
-        }, [activityStore]);
+    const { loadActivites, activityRegistry } = activityStore;
+
+    useEffect(() => {
+            
+            if (activityRegistry.size <= 1) {
+                loadActivites();
+            }
+        }, [activityStore, activityRegistry.size, loadActivites]);
     
     //Guard for checking if app fetching data from server 
     if (activityStore.loadingInitial) return <LoadingComponent content='Fetching...' />
