@@ -20,6 +20,17 @@ export default class ActivityStore {
             Date.parse(a.date) - Date.parse(b.date));
     }
 
+    get groupedActivitiesByDate() {
+        return Object.entries(
+            this.activitiesByDate.reduce((activities, activity) => {
+                const date = activity.date; //key for object hashmap
+                activities[date] = activities[date] ? [...activities[date], activity] : [activity];
+                return activities;
+            }, {} as { [key: string]: Activity[] })
+        )
+    }
+    
+
     //Arrow funcs auto bind to the class
     //Not required to setTitle: action.bound
     loadActivites = async () => {
