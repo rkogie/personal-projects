@@ -443,5 +443,5 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 # Misc
-.ionide
+.ionide/**
 SocialMediaApp/.vscode
