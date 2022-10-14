@@ -15,6 +15,7 @@ export default function NavBar() {
                     SocialMediaApp
                 </Menu.Item>
                 <Menu.Item as={NavLink} to='/activities' name='Activities' />
+                <Menu.Item as={NavLink} to='/errors' name='TestErrors' />
                 <Menu.Item>
                     <Button
                         positive
