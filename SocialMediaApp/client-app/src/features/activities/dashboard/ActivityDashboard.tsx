@@ -6,8 +6,6 @@ import LoadingComponent from '../../../app/layout/LoadingComponent';
 import { useStore } from '../../../app/stores/Store';
 import { observer } from 'mobx-react-lite';
 
-
-
 export default observer(function ActivityDashboard() {
 
     //Unpack the Store props
@@ -15,12 +13,12 @@ export default observer(function ActivityDashboard() {
     const { loadActivites, activityRegistry } = activityStore;
 
     useEffect(() => {
-            
-            if (activityRegistry.size <= 1) {
-                loadActivites();
-            }
-        }, [activityStore, activityRegistry.size, loadActivites]);
-    
+
+        if (activityRegistry.size <= 1) {
+            loadActivites();
+        }
+    }, [activityStore, activityRegistry.size, loadActivites]);
+
     //Guard for checking if app fetching data from server 
     if (activityStore.loadingInitial) return <LoadingComponent content='Fetching...' />
 
